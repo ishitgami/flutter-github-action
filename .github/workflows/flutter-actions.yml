@@ -52,7 +52,6 @@ jobs:
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
-          artifacts: |
-            build/app/outputs/apk/release/app-armeabi-v7a-release.apk
+          artifacts: "build/app/outputs/apk/release/*"
           token: ${{ secrets.TOKEN_TEST }}
           tag: v1.0.${{ github.run_number }}
