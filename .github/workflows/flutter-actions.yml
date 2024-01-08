@@ -62,4 +62,4 @@ jobs:
           folder_id: ${{ secrets.FOLDER_ID }}
           file: "build/app/outputs/apk/release/*"
           token: ${{ secrets.CREDENTIALS }}
-          name: "app-release.apk"
+          filename: "app-release.apk"
