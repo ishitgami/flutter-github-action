@@ -55,3 +55,11 @@ jobs:
           artifacts: "build/app/outputs/apk/release/*"
           token: ${{ secrets.TOKEN_TEST }}
           tag: v1.0.${{ github.run_number }}
+      
+      - name: Upload to Google Drive
+        uses: adityak74/google-drive-upload-git-action@v0.3
+        with :
+          folder_id: ${{ secrets.FOLDER_ID }}
+          file: "build/app/outputs/apk/release/*"
+          token: ${{ secrets.CREDENTIALS }}
+          name: "app-release.apk"
