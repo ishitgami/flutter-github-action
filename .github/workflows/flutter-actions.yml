@@ -60,7 +60,7 @@ jobs:
       - name: Upload to Google Drive
         uses: adityak74/google-drive-upload-git-action@v0.3
         with :
-          folder_id: ${{ secrets.FOLDER_ID }}
+          folderId: ${{ secrets.FOLDER_ID }}
           filename: "build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk"
           token: ${{ secrets.CREDENTIALS }}
           name: "app-armeabi-v7a-release.apk"
