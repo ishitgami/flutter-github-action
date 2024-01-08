@@ -62,6 +62,6 @@ jobs:
         with :
           folderId: ${{ secrets.FOLDER_ID }}
           filename: "build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk"
-          credentials: ${{ secrets.CREDENTIALS }}
+          credentials: ${{ secrets.CREDENTIALS }} 
       
       
